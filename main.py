@@ -10,10 +10,10 @@ def contact():
     return "This is a contact page"
 @app.route("/home")
 def home():
-    return "This is a contact page"
+    return "This is a Home page"
 @app.route("/gallery")
 def gallery():
-    return "This is a contact page"
+    return "This is a Gallery page"
 
 
 if __name__ == "__main__":
