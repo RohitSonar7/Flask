@@ -1,20 +1,27 @@
-from flask import Flask
+from flask import Flask,render_template
 
 app = Flask(__name__)
 
 @app.route("/")
-def Welcome():
-    return "Welcome to my Website"
+def welcome():
+
+    return "<h1>Welcome</h1>"
+
 @app.route("/contact")
-def contact():
-    return "This is a contact page"
+def ContactPage():
+
+    return render_template("contact.html")
+
 @app.route("/home")
-def home():
-    return "This is a Home page"
+def Home():
+
+    return "This is Home page"
+
 @app.route("/gallery")
 def gallery():
-    return "This is a Gallery page"
 
+    return "This is Gallery"
 
 if __name__ == "__main__":
-    app.run()
+
+    app.run(debug=True)
