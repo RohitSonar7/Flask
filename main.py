@@ -9,10 +9,10 @@ def Welcome():
 def contact():
     return "This is a contact page"
 @app.route("/home")
-def contact():
+def home():
     return "This is a contact page"
 @app.route("/gallery")
-def contact():
+def gallery():
     return "This is a contact page"
 
 
